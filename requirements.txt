@@ -4,3 +4,6 @@ openai
 python-dotenv
 pdfplumber
 beautifulsoup4
+faiss-cpu
+numpy
+tiktoken
