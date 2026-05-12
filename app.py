@@ -20,15 +20,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 class ChatRequest(BaseModel):
     message: str
 
-@app.post("/chat")
-def chat(req: ChatRequest):
+@app.get("/")
+def home():
+    return {"status": "Chatbot backend is running 🚀"}
 
-    response = client.responses.create(
-        model="gpt-4.1-mini",
-        input=[
-            {"role": "system", "content": "You are Pradip's portfolio AI assistant."},
-            {"role": "user", "content": req.message}
-        ]
-    )
-
-    return {"reply": response.output_text}
