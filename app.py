@@ -57,7 +57,7 @@ def load_resume():
 # LOAD WEBSITE HTML
 # -----------------------------
 def load_html():
-    with open("portfolio.html", "r", encoding="utf-8") as f:
+    with open("index.html", "r", encoding="utf-8") as f:
         soup = BeautifulSoup(f.read(), "html.parser")
     return soup.get_text()
 
