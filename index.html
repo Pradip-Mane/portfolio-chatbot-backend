@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Pradip Mane">
+        <meta name="keywords" content="Data Scientist, Machine Learning, Deep Learning, GenAI, Python, Portfolio">
+        <meta name="description" content="Pradip Mane Portfolio - Data Scientist specializing in Machine Learning, Deep Learning and Generative AI">
+         
+        <link rel="canonical" href="https://pradipmane.com/">
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!--==================== EMAIL SERVICE ====================-->
+        <!-- Sweet Alert -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- Email.JS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
+        (function() {
+            emailjs.init("dzFMIFrBQE1UY_OT0");
+        })();
+        </script>
+
+        <!--==================== CALENDAR SERVICE ====================-->
+        <link href="assets/css/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+        <!--==================== TITLE and Favicon ====================-->
+        <title>Pradip Mane's Portfolio 👋</title>
+        <!-- <link rel="shortcut icon" type="image/png" href="assets/img/">  -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+        <!-- <link rel="manifest" href="/site.webmanifest"> -->
+
+        <!-- HTML Meta Tags -->
+        <meta name="description" content="Data Scientist specializing in Machine Learning, Deep Learning, NLP, LLMs, GenAI, Model Deployment and MLOps.">
+
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://pradipmane.com">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Pradip Mane's Portfolio 👋">
+        <meta property="og:description" content="Data Scientist specializing in Machine Learning, Deep Learning, NLP, LLMs, GenAI, Model Deployment and MLOps.">
+        <meta property="og:image" content="assets/snaps/light.png">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:domain" content="pradipmane.com">
+        <meta property="twitter:url" content="https://pradipmane.com">
+        <meta name="twitter:title" content="Pradip Mane's Portfolio 👋">
+        <meta name="twitter:description" content="Data Scientist specializing in Machine Learning, Deep Learning, NLP, LLMs, GenAI, Model Deployment and MLOps.">
+        <meta name="twitter:image" content="assets/snaps/light.png">
+
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2367QRTG56"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0CBTQT44LC');
+        </script>
+
+        <!--============Crisp Chatbot 
+        <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f1ceb2e6-7b94-4347-b101-6c1389f7f827";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+        =====-->
+    </head>
+
+    <!-- Chatbot Button -->
+    <button id="chatbot-toggle">💬</button>
+
+    <!-- Chatbot Box -->
+    <div id="chatbot-box">
+    <div id="chatbot-header">Portfolio AI Assistant</div>
+    <div id="chatbot-messages"></div>
+
+    <div id="chatbot-input-area">
+        <input id="chatbot-input" type="text" placeholder="Ask about my portfolio..." />
+        <button id="chatbot-send">Send</button>
+    </div>
+    </div>
+
+
+    
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Pradip Mane</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-setting nav__icon"></i> Skills
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#qualifications" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Qualifications
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#experience" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Experience
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#Projects" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Projects
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#papers" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> papers
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="resume.html" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Resume
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme Change Buttons -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home" data-id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/manepradip18/" target="_blank" rel="noopener noreferrer" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=YZ7_S6QAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="home__social-icon">
+                                <i class="uil uil-book-open"></i>
+                            </a>
+                            <a href="https://github.com/Pradip-Mane/" target="_blank" rel="noopener noreferrer" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+
+                                    <image class="home__blob-img" x='12' y='18' xlink:href="assets/img/perfil.png"/>
+                                </g>
+                            </svg>
+                        </div>
+                                    
+                        <div class="home__data">
+                            <h1 class="home__title">Pradip Mane, <br><span>M.Tech.</span></h1>
+                            <h3 class="home__subtitle">(Electronics System's & Communication)</h3>
+                            <p class="home__description">Data Scientist specializing in Machine Learning, Deep Learning, GenAI, LLMs, NLP, and scalable AI ML deployment solutions..</p>
+                            <a href="#contact" class="button button--flex">
+                                Contact Me <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll Down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about" data-id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">Introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/about.png" alt="Pradip Mane" class="about__img">
+
+
+                    <div class="about__data">
+                        <p class="about__description"> I have been working as a Data Scientist since 2018 and understand the key concepts and principles
+									 of this job and what it takes to successfully execute all assigned duties. After working in the data Scientist industry for over 5+ years, I have developed extensive knowledge and expertise
+									   in the field and gained valuable experience in various aspects of this job.
+								</p>
+                                <div class="profile-mf">
+									<ul class="about-info mt-4 px-md-0 px-2">
+										<li class="d-flex"><b><span>Profile:</span></b> <span>Data Science &amp; Analytics</span></li>
+										<li class="d-flex"><b><span>Domain:</span></b> <span>Healthcare, Retail, Ecommerce &amp; Digital Marketing</span></li>
+										<li class="d-flex"><b><span>Education:</span></b> <span>M.Tech. (Electronics Systems & Communication)</span></li>
+										<li class="d-flex"><b><span>Language:</span></b> <span>English, Hindi, Marathi</span></li>
+										<li class="d-flex"><b><span>Interest:</span></b> <span>Traveling, Sports, Teaching</span></li>
+										
+									</ul>
+									
+								</div>
+
+                                <br>
+
+
+
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">05+</span>
+                                <span class="about__info-name">Years' <br> Experience</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">02+</span>
+                                <span class="about__info-name">Years' <br>R&D Experience</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">8+</span>
+                                <span class="about__info-name">Projects <br> Completed</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">5</span>
+                                <span class="about__info-name">Papers <br> Published</span>
+                            </div>
+                        </div>
+                    
+                        <div class="about__buttons">
+                            <a download="" href="assets/pdf/PM_resume.pdf" class="button button--flex">
+                                Download CV<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills" data-id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">Technical Competence</span>
+
+                <div class="skills__container container grid">
+                        <!--==================== SKILLS 1 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__titles">Languages & Softwares</h1>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+
+                                <div class="skill-mf">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="95"
+											aria-valuemax="100">
+                                        <h3><span> &nbsp;&nbsp; Python</span> <span class="pull-right", style="color:white;">95%</span></h3>
+                                        </div>
+									</div>
+
+                                    <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="85"
+											aria-valuemax="100">
+                                        <h3><span> &nbsp;&nbsp; SQL (MySQL)</span> <span class="pull-right", style="color:white;">85%</span></h3>
+                                        </div>
+									</div>
+
+
+                                    <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="80"
+											aria-valuemax="100">
+                                        <h3><span>&nbsp;&nbsp;Tableau | MATLAB </span> <span class="pull-right", style="color:white;">80%</span></h3>
+                                        </div>
+									</div>
+
+                                    <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="75"
+											aria-valuemax="100">
+                                        <h3><span>&nbsp;&nbsp;C & C++ | R |</span> <span class="pull-right", style="color:white;">75%</span></h3>
+                                        </div>
+									</div>
+
+                                    <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="70"
+											aria-valuemax="100">
+                                        <h3><span> &nbsp;&nbsp;Css| Html |</span> <span class="pull-right", style="color:white;">70%</span></h3>
+                                        </div>
+									</div>
+									
+									
+								</div>
+                                    
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-robot skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__titles">Artificial Intelligence</h1>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+
+                                <div class="skill-mf">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="95"
+											aria-valuemax="100">
+                                        <h3><span> &nbsp;&nbsp;Machine Learning</span> <span class="pull-right", style="color:white;">95%</span></h3>
+                                        </div>
+									</div>
+
+                                    <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="85"
+											aria-valuemax="100">
+                                        <h3><span> &nbsp;&nbsp;Deep Learning</span> <span class="pull-right", style="color:white;">85%</span></h3>
+                                        </div>
+									</div>
+
+
+                                    <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="80"
+											aria-valuemax="100">
+                                        <h3><span>&nbsp;&nbsp;GenAI | LLM </span> <span class="pull-right", style="color:white;">80%</span></h3>
+                                        </div>
+									</div>
+
+                                    <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="80"
+											aria-valuemax="100">
+                                        <h3><span>&nbsp;&nbsp;Natural Language Processing</span> <span class="pull-right", style="color:white;">80%</span></h3>
+                                        </div>
+									</div>
+
+                                    <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="85"
+											aria-valuemax="100">
+                                        <h3><span>&nbsp;&nbsp; Time Series Forcasting </span> <span class="pull-right", style="color:white;">85%</span></h3>
+                                        </div>
+									</div>
+									
+									
+								</div>
+                                    
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!--==================== SKILLS 3 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-database skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__titles">Data Handling</h1>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+
+                                <div class="skill-mf">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="95"
+											aria-valuemax="100">
+                                        <h3><span>&nbsp;&nbsp; Data Gathering</span> <span class="pull-right", style="color:white;">95%</span></h3>
+                                        </div>
+									</div>
+
+                                    <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="95"
+											aria-valuemax="100">
+                                        <h3><span>&nbsp;&nbsp; Data Pre-Processing</span> <span class="pull-right", style="color:white;">95%</span></h3>
+                                        </div>
+									</div>
+
+
+                                    <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="95"
+											aria-valuemax="100">
+                                        <h3><span>&nbsp;&nbsp;Data Mining </span> <span class="pull-right", style="color:white;">95%</span></h3>
+                                        </div>
+									</div>
+
+                                    <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="95"
+											aria-valuemax="100">
+                                        <h3><span>&nbsp;&nbsp;Data Visualization</span> <span class="pull-right", style="color:white;">95%</span></h3>
+                                        </div>
+									</div>
+
+                                    <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="95"
+											aria-valuemax="100">
+                                        <h3><span>&nbsp;&nbsp; Data Wrangling </span> <span class="pull-right", style="color:white;">90%</span></h3>
+                                        </div>
+									</div>
+									
+									
+								</div>
+                                    
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+
+                        <!--==================== SKILLS 4 ====================-->
+
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-code-branch skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__titles">Tools</h1>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+
+                                <div class="skill-mf">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="90"
+											aria-valuemax="100">
+                                        <h3><span>&nbsp;&nbsp; Framework:Tensorflow, Keras, PyTorch, Flask </span> <span class="pull-right", style="color:white;">90%</span></h3>
+                                        </div>
+									</div>
+
+                                    <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="95"
+											aria-valuemax="100">
+                                        <h3><span>&nbsp;&nbsp;IDE's:Jupyter, PyCharm, VSC, Cursur</span> <span class="pull-right", style="color:white;">95%</span></h3>
+                                        </div>
+									</div>
+
+
+                                    <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="80"
+											aria-valuemax="100">
+                                        <h3><span>&nbsp;&nbsp;Git | MS Project | Jira </span> <span class="pull-right", style="color:white;">80%</span></h3>
+                                        </div>
+									</div>
+
+                                    <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="75"
+											aria-valuemax="100">
+                                        <h3><span>&nbsp;&nbsp;Cloud (Render | AWS(basics))</span> <span class="pull-right", style="color:white;">75%</span></h3>
+                                        </div>
+									</div>
+
+                                    <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="90"
+											aria-valuemax="100">
+                                        <h3><span>&nbsp;&nbsp; MS-Excel | LaTeX </span> <span class="pull-right", style="color:white;">90%</span></h3>
+                                        </div>
+									</div>
+									
+									
+								 </div>
+                                    
+                             </div>
+
+
+                        </div>
+                    </div>            
+                </div>
+            </section>
+
+
+    <section id="python-skills" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Python Skills</h2>
+      </div>
+              
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <h4 style="text-align:left;color:#12d640;">Libraries</h4>
+            <div style="text-align:left;">
+              <figure class="item" style="display:inline-block;">
+                <a href="https://opencv.org" target="_blank" rel="noopener noreferrer" rel="noreferrer"> <img src="assets/img/logos/opencv.svg" alt="opencv" width="40" height="40" /> </a>
+                <figcaption style="text-align:center;">OpenCV</figcaption>
+              </figure>
+              &nbsp; &nbsp;
+
+              <figure class="item" style="display:inline-block;">
+                <a href="https://scikit-learn.org" target="_blank" rel="noopener noreferrer" rel="noreferrer"> <img src="assets/img/logos/scikit-learn.svg" alt="scikit_learn" width="40" height="40" /> </a>
+                <figcaption style="text-align:center;">Scikit-Learn</figcaption>
+              </figure>
+              &nbsp; &nbsp;
+
+              <figure class="item" style="display:inline-block;">
+                <a href="https://pytorch.org" target="_blank" rel="noopener noreferrer" rel="noreferrer"> <img src="assets/img/logos/pytorch.svg" alt="pytorch" width="40" height="40" /> </a>
+                <figcaption style="text-align:center;">PyTorch</figcaption>
+              </figure>
+              &nbsp; &nbsp;
+
+              <figure class="item" style="display:inline-block;">
+                <a href="https://keras.io" target="_blank" rel="noopener noreferrer" rel="noreferrer"> <img src="assets/img/logos/keras.svg" alt="keras" width="40" height="40" /> </a>
+                <figcaption style="text-align:center;">Keras</figcaption>
+              </figure>
+              &nbsp; &nbsp;
+
+              <figure class="item" style="display:inline-block;">
+                <a href="https://www.tensorflow.org" target="_blank" rel="noopener noreferrer" rel="noreferrer"> <img src="assets/img/logos/tensorflow.svg" alt="tensorflow" width="40" height="40" /> </a>
+                <figcaption style="text-align:center;">TensorFlow</figcaption>
+              </figure>
+              &nbsp; &nbsp;
+
+              <figure class="item" style="display:inline-block;">
+                <a href="https://numpy.org" target="_blank" rel="noopener noreferrer" rel="noreferrer"> <img src="assets/img/logos/numpy.svg" alt="numpy" width="40" height="40" /> </a>
+                <figcaption style="text-align:center;">NumPy</figcaption>
+              </figure>
+              &nbsp; &nbsp;
+              
+              <figure class="item" style="display:inline-block;">
+                <a href="https://pandas.pydata.org" target="_blank" rel="noopener noreferrer" rel="noreferrer"> <img src="assets/img/logos/pandas.svg" alt="pandas" width="40" height="40" /> </a>
+                <figcaption style="text-align:center;">Pandas</figcaption>
+              </figure>
+              &nbsp; &nbsp;
+
+              <figure class="item" style="display:inline-block;">
+                <a href="https://matplotlib.org" target="_blank" rel="noopener noreferrer" rel="noreferrer"> <img src="assets/img/logos/matplotlib.svg" alt="matplotlib" width="40" height="40" /> </a>
+                <figcaption style="text-align:center;">Matplotlib</figcaption>
+              </figure>
+              &nbsp; &nbsp;
+
+              <figure class="item" style="display:inline-block;">
+                <a href="https://seaborn.pydata.org" target="_blank" rel="noopener noreferrer" rel="noreferrer"> <img src="assets/img/logos/seaborn.svg" alt="seaborn" width="40" height="40" /></a>
+                <figcaption style="text-align:center;">Seaborn</figcaption>
+              </figure>
+              &nbsp; &nbsp;
+
+              <figure class="item" style="display:inline-block;">
+                <a href="https://scipy.org/" target="_blank" rel="noopener noreferrer" rel="noreferrer"><img src="assets/img/logos/scipy.svg" alt="SciPy" width="40" height="40" /> </a>
+                <figcaption style="text-align:center;">SciPy</figcaption>
+              </figure>
+              &nbsp; &nbsp;
+
+              <figure class="item" style="display:inline-block;">
+                <a href="https://lightgbm.readthedocs.io/en/stable/" target="_blank" rel="noopener noreferrer" rel="noreferrer"> <img src="assets/img/logos/lightgbm.svg" alt="LightGBM" width="40" height="40" /> </a>
+                <figcaption style="text-align:center;">LightGBM</figcaption>
+              </figure>
+              &nbsp; &nbsp;
+
+              <figure class="item" style="display:inline-block;">
+                <a href="https://www.statsmodels.org/stable/index.html" target="_blank" rel="noopener noreferrer" rel="noreferrer"> <img src="assets/img/logos/statsmodels.svg" alt="statsmodels" width="40" height="40" /> </a>
+                <figcaption style="text-align:center;">statsmodels</figcaption>
+              </figure>
+
+              
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- ======= End Skills Section ======= -->
+
+
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualifications" data-id="qualification">
+                <h2 class="section__title">Qualifications</h2>
+                <span class="section__subtitle">Academic and Course Certifications </span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target="#Certifications">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Certifications
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target="#Exams">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Exams
+                        </div>
+                    </div>
+                    <div class="qualification__sections">
+                        <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--==================== Education  1 ====================-->
+                            <div class="qualification__data">
+                               <div>
+                                    <h3 class="qualification__degree">Master of Technology (M.Tech.)</h3><br>
+                                    <span class="qualification__title">Electronics Systems & Comm.</span>
+                                    <span class="qualification__subtitle">Government College of Engineering, Amravati, Maharashtra.</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2016
+                                    </div>
+                                </div>
+                               <div>
+                                   <span class="qualification__rounder"></span>
+                                   <span class="qualification__line"></span>
+                               </div>
+                           </div>
+
+                            <!--==================== Education  2 ====================-->
+                            <div class="qualification__data">
+                               <div></div>
+                               <div>
+                                   <span class="qualification__rounder"></span>
+                                   <span class="qualification__line"></span>
+                               </div>
+
+                               <div>
+                                    <h3 class="qualification__degree">Bachelors in Engineering (B.E.)</h3><br>
+                                    <span class="qualification__title">Electronics</span>
+                                    <span class="qualification__subtitle">Shivaji University, Kolhapur, Maharashtra.</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2013
+                                    </div>
+                                </div>
+
+                           </div>
+
+                            <!--==================== Education  3 ====================-->
+                            <div class="qualification__data">
+                               <div>
+                                    <h3 class="qualification__degree">H.S.C.</h3> <br>
+                                    <span class="qualification__title">Physics, Chemistry, Maths</span>
+                                    <span class="qualification__subtitle">Vivekanand College, Kolhapur, Maharashtra.</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2009
+                                    </div>
+                                </div>
+                               <div>
+                                   <span class="qualification__rounder"></span>
+                                   <span class="qualification__line"></span>
+                               </div>
+                           </div>
+
+                            <!--==================== Education  4 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+ 
+                                <div>
+                                    <h3 class="qualification__degree">S.S.C.</h3><br>
+                                    <span class="qualification__title">Highschool</span>
+                                    <span class="qualification__subtitle">SDHRB, Rajgoli BK., Changad Kolhapur, Maharashtra.</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2007
+                                    </div>
+                                </div>
+ 
+                            </div>
+
+                       </div>
+
+
+
+                        <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                        <div class="qualification__content" data-content id="Certifications">
+                            <!--==================== Certifications  1 ====================-->
+                            <div class="qualification__data">
+                               <div>
+                                   <h3 class="qualification__degree">Master’s Program - Data Scientist:</h3><br>
+                                   <span class="qualification__subtitle">Simplilearn Certified in collaboration with IBM </span>
+                                   
+                                   <div class="qualification__calendar">
+                                       <i class="uil uil-calendar-alt"></i>
+                                       2022-2023
+                                   </div>
+                               </div>
+                               <div>
+                                   <span class="qualification__rounder"></span>
+                                   <span class="qualification__line"></span>
+                               </div>
+                           </div>
+
+                            <!--==================== Certifications  2 ====================-->
+                            <div class="qualification__data">
+                               <div></div>
+                               <div>
+                                   <span class="qualification__rounder"></span>
+                                   <span class="qualification__line"></span>
+                               </div>
+
+                               <div>
+                                   <h3 class="qualification__degree">Python and Flask Framework Complete Course: </h3><br>
+                                   <span class="qualification__subtitle">Udemy </span>
+                                   <div class="qualification__calendar">
+                                       <i class="uil uil-calendar-alt"></i>
+                                       2023
+                                   </div>
+                               </div>
+
+                           </div>
+
+                            <!--==================== Certifications  3 ====================-->
+                            <div class="qualification__data">
+                               <div>
+                                   <h3 class="qualification__degree">Data Science Module Training:</h3><br>
+                                   <span class="qualification__subtitle">UV Technocrats, Pune </span>
+                                   <div class="qualification__calendar">
+                                       <i class="uil uil-calendar-alt"></i>
+                                       2017-2018
+                                   </div>
+                               </div>
+                               <div>
+                                   <span class="qualification__rounder"></span>
+                                   <span class="qualification__line"></span>
+                               </div>
+                           </div>
+
+                            <!--==================== Certifications  4 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+ 
+                                <div>
+                                    <h3 class="qualification__degree">C & C++ Course</h3> <br>
+                                    <span class="qualification__subtitle">Center For Advanced Technology, Pune</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2011
+                                    </div>
+                                </div>
+ 
+                            </div>
+
+                       </div>
+
+
+
+                       
+                        <!--==================== QUALIFICATION CONTENT 3 ====================-->
+                        <div class="qualification__content" data-content id="Exams">
+                            <!--==================== Exams  1 ====================-->
+                            <div class="qualification__data">
+                               <div>
+                                   <h3 class="qualification__degree">NET</h3> <br>
+                                   <span class="qualification__subtitle">EXAM QUALIFIED</span>
+                                   <div class="qualification__calendar">
+                                       <i class="uil uil-calendar-alt"></i>
+                                       2020
+                                   </div>
+                               </div>
+                               <div>
+                                   <span class="qualification__rounder"></span>
+                                   <span class="qualification__line"></span>
+                               </div>
+                           </div>
+
+                            <!--==================== Exams  2 ====================-->
+                            <div class="qualification__data">
+                               <div></div>
+                               <div>
+                                   <span class="qualification__rounder"></span>
+                                   <span class="qualification__line"></span>
+                               </div>
+
+                               <div>
+                                   <h3 class="qualification__degree">GATE </h3><br>
+                                   <span class="qualification__subtitle">EXAM QUALIFIED</span>
+                                   <div class="qualification__calendar">
+                                       <i class="uil uil-calendar-alt"></i>
+                                       2014,2015,2016,2017,2019
+                                   </div>
+                               </div>
+
+                           </div>                        
+                            
+                       </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+              <!--==================== Experience ====================-->
+                <section class="experience section" id="experience" data-id="experience">
+                <h2 class="section__title">Experience</h2>
+                <span class="section__subtitle">Technical Experience</span>
+
+    
+
+                    <!-- Project Grid -->
+                <div class="work__grid container">
+
+                    <div class="work__card" data-category="End-to-End Projects">
+
+                        <span class="uil uil-calendar-alt">Sept 2025 - Present</span>
+						<h2 class="job-title">Data Scientist</h2>
+						<h3 class="position">V-Dart Technologies | Client: HPCL, Mumbai</h3>
+                         <br>
+                        <h4>Roles and Responsibility:</h4>
+						
+							<ul class="bullets">
+                                <li>Participating in daily standup calls and stakeholder coordination meetings.</li>
+                                <li>Performing data collection, preprocessing, validation, and transformation for analytics workflows.</li>
+                                <li>Building and deploying Machine Learning and Deep Learning models for business use cases.</li>
+                                <li>Collaborating with cross-functional teams to plan project execution, testing, and delivery timelines.</li>
+                            </ul>              
+                   
+                    </div>
+                    
+                    <div class="work__card" data-category="End-to-End Projects">
+
+                        <span class="uil uil-calendar-alt">April 2020 - Sept2024</span>
+						<h2 class="job-title">Data Scientist</h2>
+						<h3 class="position">Quest Integrity Services | Pune</h3>
+                         <br>
+                        <h4>Roles and Responsibility:</h4>
+						
+							<ul class="bullets">
+                                <li>Actively participated in daily stand-up meetings and task assignments.</li>
+                                <li>Collected, cleaned, and transformed data for analysis and modeling.</li>
+                                <li>Developed and deployed Machine Learning and Deep Learning models for business applications.</li>
+                                <li>Worked with stakeholders to develop roadmaps based on impact, effort and test coordination.</li>
+                            </ul>                
+                   
+                    </div>
+
+                    <div class="work__card" data-category="End-to-End Projects">
+
+                        <span class="uil uil-calendar-alt">September 2018 - March 2020</span>
+						<h2 class="job-title">Research Associate</h2>
+						<h3 class="position">College of Engineering Pune | Pune</h3>
+                        <br>
+                        <h4>Roles and Responsibility:</h4>
+							<ul class="bullets">
+                                <li>Gathered, arranged & corrected the data to facilitate Research Objectives.</li>
+                                <li>Devised and deployed predictive models using ML/DL algorithms.</li>
+                                <li>Wrote research papers, reports and reviews regarding projects.</li>
+                                <li>Contributed to and actively participated in research conception, design and execution to address defined problems.</li>
+                            </ul>                
+                   
+                    </div>
+
+                    <div class="work__card" data-category="End-to-End Projects">
+
+                        <span class="uil uil-calendar-alt">January 2018 - May 2018</span>
+						<h2 class="job-title">Assistant Professor</h2>
+						<h3 class="position">Veermata Jijabai Technological Institute | Mumbai</h3>
+                        <br>
+                        <h4>Roles and Responsibility:</h4>						
+							<ul class="bullets">
+                                <li>Performed Teaching and Lab work under the guidance of The Head of Department.</li>
+                                <li>Conducted research to serve as the basis for academic publication writing.</li>
+                                <li>Wrote research papers, reports and reviews regarding projects.</li>
+                                <li>Created materials and exercises to illustrate the application of concepts.</li>
+                            </ul>                
+                   
+                    </div>     
+            
+              
+                    
+      
+                    </div>
+                </section>
+
+  
+
+            <!--==================== Projects ====================-->
+           <section class="project section" id="Projects" data-id="Projects">
+                <h2 class="section__title">Projects</h2>
+                <span class="section__subtitle">completed Projects</span>
+            
+                <!-- Filter Buttons -->
+                <div class="project__buttons">
+                    <button class="project__btn active" data-filter="all">All</button>
+                    <button class="project__btn" data-filter="End-to-End_Projects">End-to-End Projects</button>
+                    <button class="project__btn" data-filter="ML_Projects">ML Projects</button>
+                    <button class="project__btn" data-filter="DL_Projects">DL Projects</button>
+                    <button class="project__btn" data-filter="LLM_Projects">LLM Projects</button>
+
+                </div>
+            
+                <!-- Project Grid -->
+                <div class="projects__grid container">
+                    <!-- End-to-End Projects -->
+                    <div class="project__card" data-category="End-to-End_Projects">
+                        <a href="https://drive.google.com/file/d/1a0PPXBGQ6TeCaA42gWbi9gI73eT4PIey/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('assets/project_img/project_1.png');">
+                        </a>
+                        <!-- <img src="assets/img/project_1.png" alt="Pool Scrubbing Simulation" class="paper__img"> -->
+                        <h5 class="project__title">Heart-Sound-Classification Using Machine Learning Algorithm</h5>
+                         <a href="https://drive.google.com/file/d/1av4s5xuLLICIYoi9l7E4aHK7F6hI4DVb/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+
+                    <div class="project__card" data-category="End-to-End_Projects">
+                        <a href="https://docs.google.com/presentation/d/17PX6sb5Xr9KeugEfObqIEAWWViVEMZeu/edit?usp=drive_link&ouid=114891359592322667143&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('assets/project_img/project_2.png');">
+                        </a>
+                        <!-- <img src="assets/img/project_2.png" alt="Bubble Diameter Correlation" class="paper__img"> -->
+                        <h5 class="project__title">Cuffless Blood Pressure Monitoring Using Machine Learning Algorithm</h5>
+                        <a href="https://drive.google.com/drive/folders/1nXUdrpnbT6p4Oo56_R704cV70I_hoFDY" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+
+                      <div class="project__card" data-category="End-to-End_Projects">
+                        <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('assets/project_img/project_3.png');">
+                        </a>
+                        <!-- <img src="assets/img/project_3.png" alt="Bubble Diameter Correlation" class="paper__img"> -->
+                        <h5 class="project__title">Fault Detection of Vehicle Starters Using ML Algorithm</h5>
+                        <a href="https://drive.google.com/drive/folders/1ug8jJqhAHvEr5XuVCynCK1VBprMgQk2T" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+            
+                    <!-- ML Projects -->
+
+                    <div class="project__card" data-category="ML_Projects">
+                        <a href="https://diabities-classification.onrender.com" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('assets/project_img/diabetics.png');">
+                        </a>
+                        <!-- <img src="assets/img/project_4.jpg" alt="Pool Scrubbing Analysis" class="paper__img"> -->
+                        <h5 class="project__title">Diabities classification Using Machine Learning Algorithm </h5>
+                         <a href="https://github.com/Pradip-Mane/Diabities_classification" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+
+
+                    <div class="project__card" data-category="ML_Projects">
+                        <a href="https://decisiontree-diabetes.onrender.com" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('assets/project_img/Diabetes.jpg');">
+                        </a>
+                        <!-- <img src="assets/img/project_4.jpg" alt="Pool Scrubbing Analysis" class="paper__img"> -->
+                        <h5 class="project__title">Diabities classification Using Decision Tree Machine Learning Algorithm </h5>
+                         <a href="https://github.com/Pradip-Mane/DecisionTree_diabetes" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+
+                    <div class="project__card" data-category="ML_Projects">
+                        <a href="https://voice-categoriztion-svm.onrender.com" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('assets/project_img/voice.png');">
+                        </a>
+                        <!-- <img src="assets/img/project_4.jpg" alt="Pool Scrubbing Analysis" class="paper__img"> -->
+                        <h5 class="project__title">Voice Categoriztion Using Support Vector Machine (SVM) Algorithm</h5>
+                         <a href="https://github.com/Pradip-Mane/Voice-Categoriztion-SVM" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+                    
+                    <div class="project__card" data-category="ML_Projects">
+                        <a href="https://titanic-servival-classification.onrender.com"target="_blank" rel="noopener noreferrer"  class="block-20 zoom-effect" style="background-image: url('assets/project_img/titanic2.png');">
+                        </a>
+                        <!-- <img src="assets/img/project_4.jpg" alt="Pool Scrubbing Analysis" class="paper__img"> -->
+                        <h5 class="project__title">Titanic Servival Classification using Logistic Regression Algorithm </h5>
+                         <a href="https://github.com/Pradip-Mane/Titanic_Servival_Classification" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+
+                    <div class="project__card" data-category="ML_Projects">
+                        <a href="https://breast-cancer-classificaton-rf.onrender.com" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('assets/project_img/breast_cancer.png');">
+                        </a>
+                        <!-- <img src="assets/img/project_4.jpg" alt="Pool Scrubbing Analysis" class="paper__img"> -->
+                        <h5 class="project__title">Breast Cancer Classificaton using Random Forest Algorithm </h5>
+                         <a href="https://github.com/Pradip-Mane/Breast_Cancer_Classificaton_RF" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+
+                    <div class="project__card" data-category="ML_Projects">
+                        <a href="https://bhp1.onrender.com" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('assets/project_img/house_price.png');">
+                        </a>
+                        <!-- <img src="assets/img/project_4.jpg" alt="Pool Scrubbing Analysis" class="paper__img"> -->
+                        <h5 class="project__title">Bostan House Price Prediction </h5>
+                         <a href="https://github.com/Pradip-Mane/BostonHousePricing" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+                    <div class="project__card" data-category="ML_Projects">
+                        <a href="https://house-price-prediction-q50a.onrender.com/" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('assets/project_img/bhp.png');">
+                        </a>
+                        <!-- <img src="assets/img/project_4.jpg" alt="Pool Scrubbing Analysis" class="paper__img"> -->
+                        <h5 class="project__title">House Price Prediction using Linear Regression Algorithm </h5>
+                         <a href="https://github.com/Pradip-Mane/House_Price_Prediction" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+
+                    <div class="project__card" data-category="ML_Projects">
+                        <a href="https://advertising-sales-prediction-2v38.onrender.com" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('assets/project_img/advert.png');">
+                        </a>
+                        <!-- <img src="assets/img/project_4.jpg" alt="Pool Scrubbing Analysis" class="paper__img"> -->
+                        <h5 class="project__title">Advertising Sales Prediction </h5>
+                         <a href="https://github.com/Pradip-Mane/Advertising_Sales_Prediction" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+            
+                
+                    
+                    <!-- DL Projects -->
+                    <div class="project__card" data-category="DL_Projects">
+                        <a href="https://advertising-sales-prediction-2v38.onrender.com" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('assets/img/project_3.png');">
+                        </a>
+                        <!-- <img src="assets/img/project_4.jpg" alt="Pool Scrubbing Analysis" class="paper__img"> -->
+                        <h5 class="project__title">Advertising Sales Prediction </h5>
+                         <a href="https://github.com/Pradip-Mane/Advertising_Sales_Prediction" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+            
+                    
+
+                    <!-- LLM Projects -->
+                    <div class="project__card" data-category="LLM_Projects">
+                        <a href="https://advertising-sales-prediction-2v38.onrender.com" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('assets/img/project_3.png');">
+                        </a>
+                        <!-- <img src="assets/img/project_4.jpg" alt="Pool Scrubbing Analysis" class="paper__img"> -->
+                        <h5 class="project__title">Advertising Sales Prediction </h5>
+                         <a href="https://github.com/Pradip-Mane/Advertising_Sales_Prediction" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+  
+                </div>
+
+                <div class="load-more-container">
+                    <button class="project-load-more-btn button button--flex button--small">
+                        Load More <i class="uil uil-arrow-down"></i>
+                    </button>
+                </div>
+
+            </section>
+
+
+            
+            <!--==================== PAPERS ====================-->
+            <section class="paper section" id="papers" data-id="papers">
+                <h2 class="section__title">Papers</h2>
+                <span class="section__subtitle">Published Papers</span>
+            
+                <!-- Filter Buttons -->
+                <div class="paper__buttons">
+                    <button class="paper__btn active" data-filter="all">All</button>
+                    <button class="paper__btn" data-filter="journal">Journal</button>
+                    <button class="paper__btn" data-filter="proceedings">Proceedings</button>
+                    <button class="paper__btn" data-filter="theses">Theses</button>
+                </div>
+            
+                <!-- Papers Grid -->
+                <div class="papers__grid container" id="papers-grid">
+                    <!-- Journal -->
+                    <div class="paper__card" data-category="journal">
+                        <img src="assets/img/ieee.png" alt="Pool Scrubbing Simulation" class="paper__img">
+                        <h5 class="paper__title">“Machine Learning Approach for Prediction of Aortic and Mitral Regurgitation based on Phonocardiogram Signal”. (IEEE, India, 2021).</h5>
+                         <a href="https://ieeexplore.ieee.org/document/9579971" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+
+                    <div class="paper__card" data-category="journal">
+                        <img src="assets/img/springer.png" alt="Bubble Diameter Correlation" class="paper__img">
+                        <h5 class="paper__title">“Machine Learning Based Heart Sound Classification using Hilbert Transform Envelope Technique”. (Springer, London, UK, Feb 2020).</h5>
+                        <a href="https://www.springerprofessional.de/en/machine-learning-based-classification-of-heart-sound-using-hilbe/18509272" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+
+                    <div class="paper__card" data-category="journal">
+                        <img src="assets/img/Journal-Paper.png" alt="Pool Scrubbing Analysis" class="paper__img">
+                        <h5 class="paper__title">“Machine Learning Approach towards Continuous Cuffless Blood Pressure Monitoring Based on PPG Technique”. (IEEE, Under Review)</h5>
+                         <a href="https://drive.google.com/file/d/1VJu4apajkZ9nnZRVVNiGwsh0W4TX9UFC/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+            
+                    <!-- Proceedings -->
+            
+                    <div class="paper__card" data-category="proceedings">
+                        <img src="assets/img/ijiere.png" alt="Pool Scrubbing Code" class="paper__img">
+                        <h5 class="paper__title">“Post-correction of Analog-To-Digital Converter with Real-time FPGA Implementation: A Review " (IJIERE, ICSTSD 2016).</h5>
+                        <a href="https://drive.google.com/file/d/18O31XCY5h-QRgbuCfcBzL3Me70mcoXD2/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+            
+                    <div class="paper__card" data-category="proceedings">
+                        <img src="assets/img/IRF.png" alt="Bubble Diameter Analysis" class="paper__img">
+                        <h5 class="paper__title">“Digital Post-Correction of Analog-To-Digital Converter". (IRF International Conference, 2016, Pune, India.)</h5>
+                        <a href="https://www.digitalxplore.org/up_proc/pdf/232-14645846895-8.pdf" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+  
+                    
+                    <!-- Theses -->
+                    <!-- <div class="paper__card" data-category="theses">
+                        <img src="assets/img/snu.png" alt="Ph.D. Dissertation" class="paper__img">
+                        <h5 class="paper__title">Development of a Mean Bubble Size Approach to Improve Pool Scrubbing Swarm Region Modeling</h5>
+                         <a href="https://erolbicer.com" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div> -->
+            
+                    <div class="paper__card" data-category="theses">
+                        <img src="assets/img/gcoea.png" alt="Master's Thesis" class="paper__img">
+                        <h5 class="paper__title">“POST-CORRECTION OF ADC WITH REAL-TIME FPGA IMPLEMENTATION”</h5>
+                        <a href="https://drive.google.com/drive/folders/16_SN4_tL3GExZV26DQSJC9qsU6RlQtnK" target="_blank" rel="noopener noreferrer" class="button button--flex button--small paper__button">
+                            Read More  <i class="uil uil-external-link-alt button__iconsmall "></i>
+                        </a>
+                    </div>
+            
+                    <!-- Add more paper cards here -->
+
+                    <!-- Load More Button -->
+
+                </div>
+
+                <div class="load-more-container">
+                    <button class="paper-load-more-btn button button--flex button--small">
+                        Load More <i class="uil uil-arrow-down"></i>
+                    </button>
+                </div>
+
+            </section>
+            
+
+
+
+            
+            <!--==================== PRESENTATION ====================-->
+            <!--<section class="presentation section" id="presentation">
+                <h2 class="section__title">Presentations</h2>
+                <span class="section__subtitle">Talks and Meetings</span>
+
+                <div class="presentation__container container grid">
+                    <div class="presentation__content">-->
+                        <!--<div class="iframe__container">
+                            <span class="presentation__subtitle">FNC Technology Company Introduction</span>
+                            <iframe allowfullscreen class="iframe" width="100%" height="100%"  src="https://www.beautiful.ai/embed/-N99gCWOIluAxGaB3Ki_?utm_source=beautiful_player&utm_medium=embed&utm_campaign=-MzlkefNLC76aJ1MLXfh"></iframe>
+                        </div>                       
+                        <div class="iframe__container">
+                            <span class="presentation__subtitle">SMR & MMR Development Status in the World</span>
+                            <iframe allowfullscreen class="iframe" width="100%" height="100%"  src="https://www.beautiful.ai/embed/-N9WTeD278rsbcimSTFQ?utm_source=beautiful_player&utm_medium=embed&utm_campaign=-N9WS-JQcqI9yrHAPO0K"></iframe>
+                        </div>-->                                               
+                        <!--<div class="iframe__container">
+                            <span class="presentation__subtitle">Heart-Sound-Classification</span>
+                            <iframe allowfullscreen class="iframe" width="100%" height="100%"  src="https://www.beautiful.ai/embed/-N9ApKSzKtHuNwFS2cEY?utm_source=beautiful_player&utm_medium=embed&utm_campaign=-N9AnjGmWtBp2Tgf5cej"></iframe>
+                        </div>                                             
+                    </div>   
+                 </div>
+            </section>-->
+
+
+            
+
+            <!--==================== ONLINE MEETING ====================-->
+            <!-- <section class="meeting section" id="meeting">
+                <h2 class="section__title">Online Meeting</h2>
+                <span class="section__subtitle">Send a Request</span>
+
+                <div class="meeting__container container grid">
+                    <div class="meeting__content">
+                        <div class="zeeg__container">
+                            <iframe class="iframe-meeting" width="100%" height="100%" src="https://zeeg.me/erol/onlinemeeting"></iframe>
+                         </div>                        
+                    </div>   
+                 </div>
+            </section> -->
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact" data-id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in Touch</span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">+91-8999-134-125</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <!-- <span class="contact__subtitle">erolbicer@live.com</span> -->
+                                <p><a class="contact__subtitle" href="mailto:manepradip18@gmail.com">manepradip18@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Pune, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Full Name</label>
+                                <input type="text" placeholder="Enter full name" class="contact__input" id="fullName" onkeyup="validateName()">
+                                <span id="name-error" class="contact__subtitle"></span>
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" placeholder="Enter email address" class="contact__input" id="email_id" onkeyup="validateEmail()">
+                                <span id="email-error" class="contact__subtitle"></span>
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Subject</label>
+                            <input type="text" id="subject" placeholder="Enter a subject line" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" cols="0" rows="7" placeholder="Enter your message" class="contact__input" id="message" onkeyup="validateMessage()"></textarea>
+                            <span id="message-error" class="contact__subtitle"></span>
+                        </div>
+                        <div>
+                            <button type="button" class="button button--flex" onclick="SendMail(event)">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <a href="#" class="footer__title">Pradip Mane, M.Tech.</a><br>
+                        <span class="footer__subtitle">Data Scietist</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#qualifications" class="footer__link">Qualifications</a>
+                        </li>
+
+                        <li>
+                            <a href="#skills" class="footer__link">Skills</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#Projects" class="footer__link">Projects</a>
+                        </li>
+
+                        <li>
+                            <a href="#paper" class="footer__link">Papers</a>
+                        </li>
+
+                        <li>
+                            <a href="#presentation" class="footer__link">Presentations</a>
+                        </li>
+
+                        <li>
+                            <a href="#meeting" class="footer__link">Meeting</a>
+                        </li>
+
+                        <li>
+                            <a href="#Contact" class="footer__link">Contact</a>
+                        </li>                        
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/manepradip18/" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="footer__social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+                        <a href="https://scholar.google.com/citations?user=YZ7_S6QAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="footer__social">
+                            <i class="uil uil-book-open"></i>
+                        </a>
+
+                        <a href="https://github.com/Pradip-Mane/" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="footer__social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; All rights reserved.</p>
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
+
