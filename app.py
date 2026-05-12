@@ -41,6 +41,7 @@ metadata = []
 # -----------------------------
 class ChatRequest(BaseModel):
     message: str
+    history: list = []
 
 # -----------------------------
 # LOAD RESUME
@@ -132,8 +133,23 @@ def home():
 @app.post("/chat")
 def chat(req: ChatRequest):
 
-    context = search(req.message)
+    # -----------------------------
+    # CONTEXT-AWARE SEARCH
+    # -----------------------------
+    full_query = req.message
 
+    if req.history:
+        recent_context = " ".join(
+            [msg["content"] for msg in req.history[-4:]]
+        )
+
+        full_query = recent_context + " " + req.message
+
+    context = search(full_query)
+
+    # -----------------------------
+    # SYSTEM PROMPT
+    # -----------------------------
     system_prompt = f"""
 You are Pradip Mane's AI portfolio assistant.
 
@@ -143,19 +159,30 @@ Use ONLY the context below:
 
 Rules:
 - Be short and professional
-- If not found, say "Not available in portfolio data"
+- If answer not found, say:
+  "Not available in portfolio data"
 """
 
+    # -----------------------------
+    # CONVERSATION MEMORY
+    # -----------------------------
+    messages = [
+        {"role": "system", "content": system_prompt}
+    ]
+
+    # add previous chat history
+    for msg in req.history[-10:]:
+        messages.append(msg)
+
+    # -----------------------------
+    # OPENAI RESPONSE
+    # -----------------------------
     response = client.responses.create(
         model="gpt-4.1-mini",
-        input=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": req.message}
-        ]
+        input=messages
     )
 
     return {"reply": response.output_text}
-
 # -----------------------------
 # INIT ON STARTUP
 # -----------------------------
